@@ -13,6 +13,7 @@ namespace GenericsPracticeProblem
             IntegerFindMax integerFindMax = new IntegerFindMax();
             integerFindMax.FindMaxValue(10,20,30);
             integerFindMax.FindMaxValue(10.20f, 20.30f, 50.60f);
+            integerFindMax.FindMaxValue("Ritesh","Rushikesh","Ronit");
             Console.ReadLine();
         }
     }
