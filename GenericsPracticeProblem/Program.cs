@@ -13,6 +13,7 @@ namespace GenericsPracticeProblem
             Console.WriteLine("Welcome To Genrics Use CXases");
             Console.WriteLine("1 : Find Max Interger Float And String");
             Console.WriteLine("2 : Find Maximum Using Generics Method");
+            Console.WriteLine("3 : Find Maximum Using Generics Class");
             Console.WriteLine("Enter A Optiom");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -28,6 +29,14 @@ namespace GenericsPracticeProblem
                     refactor1.FindMaxValue<int>(10, 20, 30);
                     refactor1.FindMaxValue<float>(10.20f, 20.30f, 50.60f);
                     refactor1.FindMaxValue<string>("Ritesh", "Rushikesh", "Ronit");
+                    break;
+                case 3:
+                    Refactor2<int> re = new Refactor2<int>();
+                    re.FindMaxValue(10, 20, 30);
+                    Refactor2<float> ref2 = new Refactor2<float>();
+                    ref2.FindMaxValue(10.20f, 20.30f, 50.60f);
+                    Refactor2<string> r3 = new Refactor2<string>();
+                    r3.FindMaxValue("Ritesh", "Rushikesh", "Ronit");
                     break;
             }
             Console.ReadLine();
